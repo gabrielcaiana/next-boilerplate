@@ -12,14 +12,14 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 18.x
-            cache: npm
-      
-      - name : Install Dependencies
+          cache: npm
+
+      - name: Install Dependencies
         run: npm install
 
       - name: Linting
         run: npm run lint
-      
+
       - name: Testing
         run: npm run test
 
